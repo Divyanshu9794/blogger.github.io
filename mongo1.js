@@ -8,9 +8,9 @@ const app = express()
 const port = 2202
 const nodemailer = require('nodemailer');
 
-app.use(express.static("Assets"));
+
 //static path:the entire public directory is made static
-app.get('/', (req, res) => {
+app.get('index.html', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 
 })
