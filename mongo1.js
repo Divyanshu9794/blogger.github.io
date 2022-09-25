@@ -11,17 +11,17 @@ const nodemailer = require('nodemailer');
 
 //static path:the entire public directory is made static
 app.get('index.html', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + 'index.html')
 
 })
 
-app.get('/contact.html', (req, res) => {
-    res.sendFile(__dirname + '/contact.html')
+app.get('contact.html', (req, res) => {
+    res.sendFile(__dirname + 'contact.html')
 
 })
 
-app.get('/form.html', (req, res) => {
-    res.sendFile(__dirname + '/form.html')
+app.get('form.html', (req, res) => {
+    res.sendFile(__dirname + 'form.html')
 
 })
 
@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 const db = client.db(db_name)
-app.post('/form.html', function (req, res) {
+app.post('form.html', function (req, res) {
     const name = req.body.name
    
     const email = req.body.email
