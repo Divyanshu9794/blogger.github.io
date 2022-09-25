@@ -64,7 +64,7 @@ app.post('form.html', function (req, res) {
             // res.alert("Confirmation mail will be sent to you Shortly!! Thankyou.")
             // res.redirect('/');
             console.log("success")
-            res.redirect("index.html");
+            res.redirect('index.html');
         }
 
     })
