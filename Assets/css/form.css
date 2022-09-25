@@ -1,349 +1,124 @@
+body {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
 
-* {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .cotn_principal {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-  background: #cfd8dc; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #cfd8dc 0%, #607d8b 100%, #b0bec5 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #cfd8dc 0%,#607d8b 100%,#b0bec5 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #cfd8dc 0%,#607d8b 100%,#b0bec5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  
-  }
-  
-  
-  .cont_centrar {
-    position: relative;
-    float: left;
-     width: 100%;
-  }
-  
-  .cont_login {
-    position: relative;
-    width: 640px;
-  left: 50%;
-  margin-left: -320px;
-    
-  }
-  
-  .cont_back_info {  
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
   position: relative;
-    float: left;
-    width: 640px;
-    height: 280px;
-  overflow: hidden;
-    background-color: #fff;
-    margin-top: 100px;
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-  }
-  
-  .cont_forms {
-    position: absolute;
-    overflow: hidden;
-    top:100px;
-  left: 0px;
-    width: 320px;
-    height: 280px;
-    background-color: #eee;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_login {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-    height: 420px;  
-  top:20px;
-  left: 0px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  
-  }
-  
-  .cont_forms_active_sign_up {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-    height: 420px;  
-  top:20px;
-  left:320px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_img_back_grey {
-    position: absolute;
-    width: 950px;
-  top:-80px;
-    left: -116px;
-  }
-  
-  .cont_img_back_grey > img {
-    width: 100%;
-   -webkit-filter: grayscale(100%);     filter: grayscale(100%);
-  opacity: 0.2;
-  animation-name: animar_fondo;
-    animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  
-  }
-  
-  .cont_img_back_ {
-    position: absolute;
-    width: 950px;
-  top:-80px;
-    left: -116px;
-  }
-  
-  .cont_img_back_ > img {
-    width: 100%;
-  opacity: 0.3;
-  animation-name: animar_fondo;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  }
-  
-  .cont_forms_active_login > .cont_img_back_ {
-  top:0px;  
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_sign_up > .cont_img_back_ {
-  top:0px;  
-  left: -435px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-   
-  
-  .cont_info_log_sign_up {
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
   position: absolute;
-    width: 640px;
-    height: 280px;
-    top: 100px;
-  z-index: 1;
-  } 
-  
-  .col_md_login {
-    position: relative;
-    float: left;
-    width: 50%;
-  }
-  
-  .col_md_login > h2 {
-    font-weight: 400;
-  margin-top: 70px;
-      color: #757575;
-  }
-  
-  .col_md_login > p {
-   font-weight: 400;
-  margin-top: 15px;
-  width: 80%;
-      color: #37474F;
-  }
-  
-  .btn_login { 
-  background-color: #26C6DA;
-    border: none;
-    padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-    color: #fff;
-  margin-top: 10px;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
   cursor: pointer;
-  }
-  
-  .col_md_sign_up {
-    position: relative;
-    float: left;
-    width: 50%;  
-  }
-  
-  .cont_ba_opcitiy > h2 {
-    font-weight: 400;
-    color: #fff;
-  }
-  
-  .cont_ba_opcitiy > p {
-   font-weight: 400;
-  margin-top: 15px;
-   color: #fff;
-  }
-  /* ----------------------------------
-  background text    
-  ------------------------------------
-   */
-  .cont_ba_opcitiy {
-    position: relative;
-    background-color: rgba(120, 144, 156, 0.55);
-    width: 80%;
-    border-radius:3px ;
-  margin-top: 60px;
-  padding: 15px 0px;
-  }
-  
-  .btn_sign_up { 
-  background-color: #ef5350;
-    border: none;
-    padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-    color: #fff;
-  margin-top: 10px;
-  cursor: pointer;
-  }
-  .cont_forms_active_sign_up {
-  z-index: 2;  
-  }
-  
-  
-  @-webkit-keyframes animar_fondo {
-    from { -webkit-transform: scale(1) translate(0px);
-  -moz-transform: scale(1) translate(0px);
-  -ms-transform: scale(1) translate(0px);
-  -o-transform: scale(1) translate(0px);
-  transform: scale(1) translate(0px); }
-    to { -webkit-transform: scale(1.5) translate(50px);
-  -moz-transform: scale(1.5) translate(50px);
-  -ms-transform: scale(1.5) translate(50px);
-  -o-transform: scale(1.5) translate(50px);
-  transform: scale(1.5) translate(50px); }
-  }
-  @-o-keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  
-  }
-  @-moz-keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  
-  }
-  @keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  }
-  .cont_form_login {
-    position: absolute;
-    opacity: 0;
-  display: none;
-    width: 320px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_login {
-  z-index: 2;  
-  }
-  .cont_forms_active_login  >.cont_form_login {
-  }
-  
-  .cont_form_sign_up {
-    position: absolute;
-    width: 320px;
-  float: left;
-    opacity: 0;
-  display: none;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-    
-  .cont_form_sign_up > input {
-  text-align: left;
-    padding: 15px 5px;
-  margin-left: 10px;
-  margin-top: 20px;
-    width: 260px;
-  border: none;
-      color: #757575;
-  }
-  
-  .cont_form_sign_up > h2 {
-  margin-top: 50px; 
-  font-weight: 400;
-    color: #757575;
-  }
-  
-  
-  .cont_form_login > input {
-    padding: 15px 5px;
-  margin-left: 10px;
-  margin-top: 20px;
-    width: 260px;
-  border: none;
-  text-align: left;
-    color: #757575;
-  }
-  
-  .cont_form_login > h2 {
-  margin-top: 110px; 
-  font-weight: 400;
-    color: #757575;
-  }
-  .cont_form_login > a,.cont_form_sign_up > a  {
-    color: #757575;
-      position: relative;
-      float: left;
-      margin: 10px;
-  margin-left: 30px;
-  }
-  
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  // outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
